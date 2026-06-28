@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Restaurant Website
+        </title>
+        <style>
+            body{
+                margin: 0;
+            }
+            .topNav{
+                overflow: hidden;
+                background-color: rgb(255, 255, 255);
+            }
+            .topNav a{
+                float: left;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topNav a:hover{
+                background-color: #faeded;
+                color: rgb(0, 0, 0);
+            }
+            .topNav a.active{
+                background-color: #ff0000;
+                color: rgb(255, 255, 255);
+            }
+            a{
+                border: 0px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topNav">
+            <a class="active" href="#home">Home</a>
+            <a href="#">About_Us</a>
+            <a href="#">Food_Gallery</a>
+            <a href="#">Offer</a>
+            <a href="#">Contact_Us</a>
+        </div>
+    </body>
+</html>
