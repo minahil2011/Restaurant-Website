@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            food gallery
+        </title>
+        <style>
+            img{
+                height: 500px;
+                width: 1160px;
+            }
+        </style>
+    </head>
+    <body>
+            <!--Slide Show-->
+        <section>
+            <img class="mySlides" src="fastfood.webp">
+            <img class="mySlides" src="food.jpg">
+            <img class="mySlides" src="coffee.webp">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousal();
+            
+            function carousal(){
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for( i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if(myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousal,3000);
+            }
+        </script>
+    </body>
+</html>
